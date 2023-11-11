@@ -1,0 +1,33 @@
+{
+  "name": "js-validations-form-localized",
+  "version": "1.0.0",
+  "description": "This package provides a validator function that can be used to perform validation checks on form inputs. It includes a set of rules that can be used to ensure that the values entered in the form meet the required criteria, such as being of a certain length or format. The function can be easily customized to fit the specific needs of your project, and it comes with translations for various languages such as English, French and Arabic...",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "jest"
+  },
+  "keywords": [
+    "js", 
+    "ts", 
+    "react", 
+    "react-native",
+    "localized",
+    "validation"
+  ],
+  "author": "Moatasem Yakhni",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.7",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.1",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  }
+}
