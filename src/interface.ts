@@ -4,10 +4,10 @@ type MinRule = `min:${number}`;
 type MaxRule = `max:${number}`;
 
 
-export type TRules = /*'bail' |*/ 'required' | 'email' | 'equal' | 'notEqual' | MinRule | MaxRule | `maxMB:${number}` | `minMB:${number}`;
+export type TRules = 'required' | 'email' | 'equal' | 'notEqual' | MinRule | MaxRule | `maxMB:${number}` | `minMB:${number}`;
 
 
-export type TRulesKeys = /*'bail' |*/ 'required' | 'email' | 'equal' | 'notEqual' | 'min' | 'max' | 'maxMB' | 'minMB';
+export type TRulesKeys = 'required' | 'email' | 'equal' | 'notEqual' | 'min' | 'max' | 'maxMB' | 'minMB';
 
 export type TKey = string;
 

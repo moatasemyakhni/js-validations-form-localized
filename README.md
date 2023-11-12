@@ -1,4 +1,4 @@
-# js-validations-form-localized v1.0.1
+# js-validations-form-localized v1.0.2
 
 Swiftly setup frontend form error handlers!
 
