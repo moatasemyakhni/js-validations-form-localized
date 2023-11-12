@@ -57,7 +57,7 @@ test('default error in shouldBeEqual with multiple keys', () => {
 		shouldBeEqual(data);
 		expect(false).toBeTruthy();
 	} catch (error) {
-		let message = data.key.join(', ') + translations[data.lang].FORM_VALIDATION_MESSAGES.MULTI_EQUAL_WITH_KEY;
+		let message = data.key.join(', ') + ' ' + translations[data.lang].FORM_VALIDATION_MESSAGES.MULTI_EQUAL_WITH_KEY;
 		expect(error).toEqual(message);
 	}
 });
@@ -126,7 +126,7 @@ test('default error in shouldBeNotEqual with multiple keys', () => {
 		shouldBeNotEqual(data);
 		expect(false).toBeTruthy();
 	} catch (error) {
-		let message = data.key.join(', ') + translations[data.lang].FORM_VALIDATION_MESSAGES.NOT_MULTI_EQUAL_WITH_KEY;
+		let message = data.key.join(', ') + ' ' + translations[data.lang].FORM_VALIDATION_MESSAGES.NOT_MULTI_EQUAL_WITH_KEY;
 		expect(error).toEqual(message);
 	}
 });

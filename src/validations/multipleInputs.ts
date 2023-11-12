@@ -20,7 +20,7 @@ export const shouldBeEqual = (params: IMultipleParams) => {
 			if (key.length === 2) {
 				message = `${key[0]} ${message} ${key[1]}`;
 			} else {
-				message = key.join(', ') + translations[lang].FORM_VALIDATION_MESSAGES.MULTI_EQUAL_WITH_KEY;
+				message = key.join(', ') + ' ' + translations[lang].FORM_VALIDATION_MESSAGES.MULTI_EQUAL_WITH_KEY;
 			}
 		}
 		throw message;
@@ -46,7 +46,7 @@ export const shouldBeNotEqual = (params: IMultipleParams) => {
 			if (key.length === 2) {
 				message = `${key[0]} ${message} ${key[1]}`;
 			} else {
-				message = key.join(', ') + translations[lang].FORM_VALIDATION_MESSAGES.NOT_MULTI_EQUAL_WITH_KEY;
+				message = key.join(', ') + ' ' + translations[lang].FORM_VALIDATION_MESSAGES.NOT_MULTI_EQUAL_WITH_KEY;
 			}
 		}
 		throw message;

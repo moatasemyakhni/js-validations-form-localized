@@ -12,7 +12,7 @@ import {
 } from "./validations/singleInput";
 
 
-const validate = (
+export const validate = (
 	validations: IValidations[],
 	lang: TAcceptedLanguages = 'en'
 ) => {
@@ -20,7 +20,7 @@ const validate = (
 
 		validations.map((validation, _) => {
 
-			const { rules, prefix: key, value, customMessage: customMessages } = validation;
+			const { rules, prefix: key, value, customMessages } = validation;
 			// no error check up
 			if (rules.length === 0) return;
 
@@ -103,15 +103,3 @@ const validate = (
 		throw Error(error);
 	}
 }
-
-validate([
-	{
-		rules: ['bail', 'email', 'min: 32'],
-		value: ['sad', 13],
-		customMessage: 'war',
-		prefix: 'ars'
-	},
-	
-], 'en');
-
-export default validate;

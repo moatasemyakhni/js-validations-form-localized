@@ -8,9 +8,14 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moatasemyakhni/js-validations-form-localized.git"
+  },
   "scripts": {
     "build": "tsup",
-    "test": "jest"
+    "test": "jest",
+    "publish": "npm publish --access=public"
   },
   "keywords": [
     "js", 
@@ -18,7 +23,9 @@
     "react", 
     "react-native",
     "localized",
-    "validation"
+    "validation",
+    "vue",
+    "angular"
   ],
   "author": "Moatasem Yakhni",
   "license": "ISC",
