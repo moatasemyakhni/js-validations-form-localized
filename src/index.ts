@@ -1,5 +1,6 @@
 import { IValidations, TRules, TRulesKeys } from "./interface";
 import { TAcceptedLanguages } from "./translations";
+import { SUPPORTED_LANGUAGES } from "./utils/constants";
 import { IParams } from "./validations/interface";
 import { shouldBeEqual } from "./validations/multipleInputs";
 import {
@@ -17,7 +18,10 @@ export const validate = (
 	lang: TAcceptedLanguages = 'en'
 ) => {
 	try {
-
+		if(!SUPPORTED_LANGUAGES.includes(lang)) {
+			lang = 'en';
+		}
+		
 		validations.map((validation, _) => {
 
 			const { rules, prefix: key, value, customMessages } = validation;

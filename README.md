@@ -1,6 +1,6 @@
-# js-validations-form-localized v1.0.0
+# js-validations-form-localized v1.0.1
 
-Validation function for inputs in **JS**; its libraries and frameworks.
+Swiftly setup frontend form error handlers!
 
 This package provides a validator function that can be used to perform validation checks on form inputs. It includes a set of rules that can be used to ensure that the values entered in the form meet the required criteria, such as being of a certain length or format. The function can be easily customized to fit the specific needs of your project, and it comes with translations for various languages such as English, French and Arabic...
 
@@ -106,7 +106,3 @@ type TAcceptedLanguages = 'ar' | 'en' | 'fr'
 | notEqual (no prefix given) | They should not be equal | Ils ne devraient pas être égaux | لا ينبغي أن يكونوا متساوين |
 | notEqual (2 prefix given) | ${prefix[0]} should not match with ${prefix[1]} | ${prefix[0]} ne doit pas correspondre avec ${prefix[1]} | ${prefix[0]} لا ينبغي أن تتطابق مع ${prefix[1]} |
 | notEqual (multiple prefixes given) | ${prefix[0]}, ${prefix[1]}, ${prefix[2]}, ... should not be equal | ${prefix[0]}, ${prefix[1]}, ${prefix[2]}, ... ne devrait pas être égal | ${prefix[0]}, ${prefix[1]}, ${prefix[2]}, ... لا ينبغي أن تكون متساوية |
-
-## Keywords
-
-[**js**](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - [**ts**](https://www.typescriptlang.org/) - [**react**](https://react.dev/) - [**react-native**](https://reactnative.dev/) - [**vue**](https://vuejs.org/) - [**angular**](https://angular.io/) - **localized** - **validation**
