@@ -1,6 +1,6 @@
 {
   "name": "js-validations-form-localized",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "This package provides a validator function that can be used to perform validation checks on form inputs. It includes a set of rules that can be used to ensure that the values entered in the form meet the required criteria, such as being of a certain length or format. The function can be easily customized to fit the specific needs of your project, and it comes with translations for various languages such as English, French and Arabic...",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

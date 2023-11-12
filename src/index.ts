@@ -16,7 +16,7 @@ import {
 export const validate = (
 	validations: IValidations[],
 	lang: TAcceptedLanguages = 'en'
-) => {
+): void => {
 	try {
 		if(!SUPPORTED_LANGUAGES.includes(lang)) {
 			lang = 'en';
